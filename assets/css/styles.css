@@ -1,0 +1,663 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%; 
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'work_sansregular';
+}
+
+.container{
+    margin: 0 5%;
+}
+
+/* Utility Classes */
+.flex{
+    display: flex;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.imageMargin{
+    margin-right: 0.8rem;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'work_sansregular';
+    src: url('../Fonts/worksans-regular-webfont.woff') format('woff2'),
+         url('../Fonts/worksans-regular-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../Fonts/montserrat-bold-webfont.woff') format('woff2'),
+         url('../Fonts/montserrat-bold-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cairoblack';
+    src: url('../Fonts/cairo_black_900-webfont.woff2') format('woff2'),
+         url('../Fonts/ cairo_black_900-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../Fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('../Fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* TopMenu */
+section.topMenu{
+    padding: 0.3rem 0;
+    background-color: white;
+}
+
+section.topMenu .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.topMenu .container .logo{
+    display: flex;
+    align-items: center;
+}
+
+section.topMenu .logo .content{
+    max-width: 15rem;
+}
+
+section.topMenu .medicalOpinion{
+    display: flex;
+    align-items: center;
+}
+
+section.topMenu .callUs{
+    display: flex;
+    align-items: center;
+}
+
+section.topMenu .EmailUs{
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation */
+
+nav{
+    padding: 1rem 0;
+    background-color: rgb(44, 183, 238);
+}
+
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .container .mainMenu{
+    display: flex;
+}
+
+nav .mainMenu a{
+    margin-right: 3rem;
+    font-size: 2rem;
+    color: #fff;
+}
+
+nav .search input{
+    padding: 1rem;
+}
+
+/* Banner Section */
+section.banner{
+    padding: 3rem 0 6rem;
+    background: url('../images/Banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.banner p{
+    margin: 1rem 0 2rem;
+}
+
+section.banner span{
+    color: red;
+}
+
+section.banner h1{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+section.banner .kneeReplacement{
+    width: 55rem;
+}
+
+section.banner button{
+    border: none;
+    outline: none;
+    padding: 1.4rem 3rem;
+    color: #fff;
+    background-color: rgb(44, 183, 238);
+    font-size: 2rem;
+}
+
+/* Midmenu Section */
+section.midMenu{
+    /* padding: 2rem 0; */
+    border-bottom: 1px solid gray;
+}
+
+section.midMenu li{
+    padding: 2rem 0;
+    margin-right: 3rem;
+    font-size: 2rem;
+}
+
+section.midMenu li a{
+    color: black;
+}
+
+section.midMenu li:hover{
+    text-decoration: underline;
+}
+
+/* Treatment Section */
+section.treatment .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 0;
+    border-bottom: 2px dashed rgb(44, 183, 238);
+}
+
+section.treatment h2{
+    font-family: 'robotoregular';
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+section.treatment p{
+    color: #5a6e79;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+section.treatment .treatmentOverview{
+    max-width: 720px;
+}
+
+/* FormSection */
+section.formSection{
+    position: relative;
+}
+
+section.formSection .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+section.formSection .details{
+    max-width: 790px;
+    padding: 5rem 0 3rem;
+    border-bottom: 2px dashed rgb(44, 183, 238);
+}
+
+section.formSection .details h2{
+    font-family: 'robotoregular';
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+section.formSection .details p{
+    color: #5a6e79;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+section.formSection .details li{
+    list-style-image: url('../images/listIcon.jpg');
+    font-size: 1.6rem;
+    color: #5a6e79;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    list-style-position: inside;
+}
+
+section.formSection .formContainer{
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    width: 330px;
+    height: 515px;
+    color: #5a6e79;
+    border-radius: 5px;
+    box-shadow: 0 0 3px grey ;
+    padding: 2rem;
+    margin-right: 3rem;
+}
+
+section.formSection .formContainer h2{
+    color: rgb(44, 183, 238);
+    margin-bottom: 2rem;
+}
+
+.accordian h2{
+    font-size: 2rem;
+}
+
+section.formSection .formContainer p{
+    margin-bottom: 2rem;
+}
+
+section.formSection .formContainer input, .formContainer textarea {
+    width: 100%;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    outline: none;
+    border: 1px solid #5a6e79;
+    border-radius: 3px;
+}
+
+.formContainer textarea{
+    resize: none;
+}
+
+section.formSection .formContainer form:last-child{
+    height: 3rem;
+}
+
+section.formSection .formContainer button{
+    width: 100%;
+    padding: 1.5rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(44, 183, 238);
+    border-radius: 5px;
+}
+
+
+/* Accordion Styles */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+.single-accord h2 span{float: left; height: 14px; position: relative; width: 47px;}
+.single-accord h2 span:before, .single-accord h2 span:after{content: ""; position: absolute; background-color: #6b6f10; transition: transform 0.25s ease-out; -webkit-transition: transform 0.25s ease-out; -moz-transition: transform 0.25s ease-out; -ms-transition: transform 0.25s ease-out;}
+.single-accord h2 span:before{top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 14px;
+    margin-left: -1px;
+    margin-top: -7px;}
+.single-accord h2 span:after{    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 2px;
+    margin-top: -1px;
+    margin-left: -7px;}
+/*.single-accord h2.collapsed:after{float: right !important; content:"\f067";}*/
+.single-accord h2 span.onlyMinus:before{
+    transform:rotate(90deg);
+}
+.single-accord h2{font-size: 1.6rem; color:#777; padding:2%; border-bottom: 1px solid }
+.single-accord p{padding:2%;}
+.accordianParent{
+    background: #002247;
+}
+
+section.formSection .Accord{
+    padding: 5rem 0;
+    border-bottom: 2px dashed rgb(44, 183, 238);
+    margin-bottom: 5rem;
+}
+
+section.formSection .Accord h3{
+    font-family: 'robotoregular';
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+section.formSection .CarouselHeading{
+    font-family: 'robotoregular';
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+
+
+
+/* Owl Carousel */
+section.formSection .card{
+    padding: 0.5rem;
+    box-shadow: 0 0 3px grey ;
+}
+
+section.formSection  .owlTheme{
+    max-width: 790px;
+    margin-left: 5%;
+}
+
+
+.owlTheme .headwrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.owlTheme .image{
+    margin: 1rem 0;
+}
+
+.owlTheme .personalInfo{
+    display: flex;
+    align-items: center;
+}
+
+.owlTheme .personalInfo .imgIcon img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+/* Top Ortho Section */
+.topOrthoSection{
+    padding: 4rem 0 6rem;
+    background-color: #e9f2f7;
+    margin: 0 auto;
+}
+
+.topOrthoSection .orthoCard{
+    max-width: 336px;
+    height: 406px;
+    background-color: white;
+    box-shadow: 2px 2px 1px lightgrey;
+}
+
+.topOrthoSection h2, .hospitals h2{
+    font-size: 2.5rem;
+    text-align: center;
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.topOrthoSection h4 , .hospitals h4{
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 3.5rem;
+}
+
+.topOrthoSection h4 span , .hospitals h4 span{
+    color: rgb(44, 183, 238);
+    
+}
+
+.topOrthoSection .orthoCard .imageContent , .hospitals .hospitalCard .imageContent{
+    text-align: center;
+}
+
+.topOrthoSection .orthoCard .imageContent h3 , .hospitals .hospitalCard .imageContent h3{
+    color: red;
+    margin: 1rem 0;
+}
+
+.topOrthoSection .orthoCard .imageContent h5 , .hospitals .hospitalCard .imageContent h5{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.topOrthoSection .orthoCard .imageContent p , .hospitals .hospitalCard .imageContent p{
+    color: #777;
+}
+
+.topOrthoSection .orthoCard .imageCard{
+    padding: 1rem;
+}
+
+/* Hospital section */
+
+.hospitals{
+    padding: 4rem 0 6rem;
+    margin: 0 auto;
+}
+
+.hospitals .hospitalCard{
+    border: 2px dotted red;
+}
+
+.hospitals .hospitalCard{
+    max-width: 384px;
+    height: 432px;
+    background-color: white;
+    box-shadow: 2px 2px 1px lightgrey;
+}
+
+.hospitals .lastLine{
+    text-align: center;
+    margin: 2.5rem 0 4rem;
+    font-size: 2rem;
+}
+
+.hospitals .lastLine span{
+    color: red;
+    text-decoration: underline;
+}
+
+
+/* BlueBanner */
+.blueBanner{
+    background-image: url(../images/blueBanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6rem 0;
+    text-align: center;
+    color: white;
+}
+
+.blueBanner h4{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.blueBanner h2{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.blueBanner .buttonWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blueBanner .buttonWrapper button{
+    border: none;
+    outline: none;
+    padding: 1.4rem 3rem;
+    color: #fff;
+    background-color: rgb(8, 142, 196);
+    font-size: 2rem;
+    margin-right: 1.5rem;
+}
+
+.blueBanner .buttonWrapper .divider{
+    font-size: 6rem;
+}
+
+.blueBanner .buttonWrapper p{
+    margin-right: 1.5rem;
+    font-size: 3rem;
+}
+
+/* Footer section */
+
+footer{
+    background-image: url(../images/Footer-Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3.5rem 0;
+    color: white;
+    position: relative;
+}
+
+footer .topwrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #777;
+}
+
+footer .topwrapper .top{
+    margin-top: 100px;
+}
+
+footer .topwrapper .iconWrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .topwrapper .aboutDoc{
+    border-radius: 5px;
+    background-color: white;
+    height: 130px;
+    width: 300px;
+    color: black;
+    padding: 1.2rem;
+    position: absolute;
+    top: -38px;
+}
+
+footer .topwrapper .aboutDoc p{
+    color:#777;
+}
+
+footer .topFooter .importantLinks > h3{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer .topFooter .importantLinks li{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+footer .topFooter .importantLinks li:before {
+    content: " -";
+}
+
+footer .topFooter .importantLinks li a{
+    color: white;
+}
+
+/* BottomFooter */
+
+footer .bottomFooter{
+    display: flex;  
+    justify-content: space-between;  
+    padding: 6rem 0 2rem;
+
+}
+
+footer .bottomFooter .logo{
+    width: 372px;
+    display: flex;
+}
+
+footer .bottomFooter .logo img{
+    margin-right: 1rem;
+}
+
+footer .bottomFooter .logo h2{
+    font-size: 3rem;
+}
+
+footer .bottomFooter .logo p{
+    font-size: 1.8rem;
+}
+
+footer .bottomFooter .aboutAafiya{
+    width: 570px;
+}
+
+footer .bottomFooter .aboutAafiya h3{
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+footer .bottomFooter .aboutAafiya p{
+    font-size: 1.6rem;
+    line-height: 1.2;
+}
+
+footer .bottomFooter .follow{
+    width: 200px;
+}
+
+footer .bottomFooter .follow h2{
+    font-size: 1.9rem;
+    margin-bottom: 1.5rem;
+}
+
+footer .bottomFooter .follow i{
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+footer .bottomFooter .follow h4{
+    margin-bottom: 1rem;
+}
+
+footer .bottomFooter .follow h5{
+    font-size: 2.5rem;
+}
+
+/* copyright */
+
+.copyright{
+    padding: 2rem 0;
+    background-color: rgb(44, 183, 238);
+    color: white;
+}
+
+.copyright .copyWrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright .copyWrap div span{
+    margin-right: 2rem;
+}
+
+
